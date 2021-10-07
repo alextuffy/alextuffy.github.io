@@ -1,0 +1,178 @@
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:#263238;
+}
+
+
+body {
+  background:#263238;
+  color: #BBC4C8;  
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  font-size: 5.5em;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.title {
+  margin-top: 10%;
+  padding: 8px 8px;
+  position: relative;
+  z-index: 1;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.col:hover {
+  opacity: 1;
+}
+
+
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cat {
+  display: flex;
+  flex-direction: column;
+  border: #191C1E;
+  border-radius: 3px;
+  box-shadow: 0px 4px 5px #171D20;
+  align-items: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background: #222D32;
+}
+
+.input {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  border-radius: 0px 0px 0px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 70px;
+  width: 500px;
+  text-align: center;
+}
+
+.button {
+  background: none;
+  border: none;
+  transition-duration: 0.6;
+  position: fixed;
+  padding-left: 11px;
+  padding-right: 12px;
+  height: 70px;
+  opacity: 60%;
+}
+
+.searchbar {
+  display: flex;
+  background: #222D32;
+  height: 70px;
+  width: 500px;
+  margin-bottom: 70px;
+  padding: 0px;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0px 4px 5px #000000;
+  align-self: center;
+}
+
+/* Create a container*/
+.logo {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  align-self: center;
+}
+
+/* Resize image */
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.icon {
+  align-self: center;
+  justify-content: center;
+  margin: 10px;
+  
+}
+
+.icon img {
+  height: auto;
+  width: 150px;
+}
+
+.icon h1 {
+  font-size: 22px;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 5px;
+}
+
+a {
+  opacity: 0.5;
+}
+
+a:link {
+  text-decoration: none;
+  color: #6c6876;
+} 
+
+a:hover {
+  font-family: monospace;
+  color: #ad77f3;
+  opacity: 1;
+}
+
+a:visited {
+  color: #7b787f;
+}
+
+

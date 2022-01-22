@@ -5,58 +5,96 @@
   <meta charset="UTF-8">
   <title>Home</title>
   <link rel="stylesheet" href="style.css" type="text/css">
-  <!-- <script src="main.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+  <script src="main.js" defer></script>
 </head>
 
+
 <body>
+  <div class="card">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button id="weather_button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button>
+    </div>
+    <div class="weather loading">
+      <h2 class="city">Weather in </h2>
+      <div class="description">Cloudy</div>
+      <div class="flex">
+        
+        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="weather-icon">                  
+        <h1 class="temp">21°C</h1>
+        <div class="feels_like">32</div>
+        <div class="humidity">Humidity: 80%</div>
+        <div class="wind">Wind speed: 4.5km/h</div>
+      </div>
+    </div>
+  </div>
+  <div class="dateTime">
+    <div class="date">
+      <span id="day">Day</span>,
+      <span id="month">Month</span>
+      <span id="dayNum">00</span>,
+      <span id="year">Year</span>
+    </div>
+    <div class="time">
+      <span id="hours">00</span>
+      <span>:</span>
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+      <span id="session">AM</span>
+    </div>
+  </div>
+
   <div class="container">
     <div class="head">
-      <h1>بسم الله‎</h1>
-      <div class="logo"><img src="/img/firefox.png"></div>
+      <div class="logo"><img src="images/firefox.png"></div>
       <div class="searchbar">    
         <form id="textfield" class="google" action="https://www.google.ca/search" method="GET">
-          <input class="input" type="search"  name="q" placeholder="Search With Google..."
+          <input class="input" type="search"  name="q" placeholder="Search with Google..."
           aria-label="Search through the site content">
-          <button class="button"><img src=""/></button>
+          
         </form>
       </div>
     </div>
-  
-    <div class="categories">
-            
+    
+    <div class="categories">      
       <div class="col">
         <div class="icon"> <h1>Coding</h1></div>
-        <div class="cat code">
-          
-          <li><a class="link" href="https://leetcode.com/">Leetcode</a></li>
+        <div class="cat code">          
+          <li><a class="link" href="https://www.codewars.com/kata/latest/my-languages">Codewars</a></li>
+          <li><a class="link" href="https://exercism.org/tracks">Exercism</a></li>
           <li><a class="link" href="https://www.freecodecamp.org/">Freecodecamp</a></li>
           <li><a class="link" href="https://www.hackerrank.com/">Hackerrank</a></li>
-          <li><a class="link" href="https://www.hackerrank.com/">...</a></li>
-          <li><a class="link" href="https://www.hackerrank.com/">...</a></li>
+          <li><a class="link" href="https://leetcode.com/">Leetcode</a></li>
         </div>
       </div>
-
+      
       <div class="col">
-        <div class="icon"> <h1>Entertainment</h1></div>
+        <div class="icon"> <h1>News</h1></div>
         <div class="cat entertainment">
           <li>
-            <a class="link" href="https://12ft.io/proxy?ref=&q=https://www.nytimes.com/">NYTimes</a>    
+            <a class="link" href="https://apnews.com/">Associated Press</a>    
           </li>
           <li>
-            <a class="link" href="https://12ft.io/proxy?ref=&q=https://www.theguardian.com/us">The Guardian</a>    
+            <a class="link" href="https://www.bbc.com/news">BBC News</a>    
           </li>
           <li>
-            <a class="link" href="https://www.netflix.com/browse">Netflix</a>    
+            <a class="link" href="https://www.economist.com/">The Economist</a>    
           </li>
           <li>
-            <a class="link" href="https://www.youtube.com/">Youtube</a>    
+            <a class="link" href="https://archive.is/V45fG">New York Times</a>    
           </li>
           <li>
-            <a class="link" href="https://scor.nbabite.com/">Sports</a>    
+            <a class="link" href="https://www.reuters.com/">Reuters</a>    
           </li>
         </div>
       </div>
-
+      
       <div class="col">
         <div class="icon"> <h1>Subreddits</h1></div>
         <div class="cat reddit">
@@ -74,57 +112,85 @@
           </li>
           <li>
             <a class="link" href="https://www.reddit.com/r/ryerson/">r/ryerson</a>    
-          </li>
-          
+          </li>          
         </div>
       </div>
-
+      
       <div class="col">
-        <div class="icon"> <h1>Miscellaneous</h1> </div>
+        <div class="icon"> <h1>School</h1> </div>
         <div class="cat misc">
           <li>
             <a class="link" href="https://courses.ryerson.ca/d2l/home">D2L</a>    
           </li>
           <li>
-            <a class="link" href="https://www.notion.so/Master-Page-9f19eaa714694eb78ab4742a23a1438c">Notion</a>    
+            <a class="link" href="https://drive.google.com/drive/u/0/my-drive">Drive</a>
           </li>
           <li>
             <a class="link" href="https://github.com/">Github</a>
           </li>
           <li>
-            <a class="link" href="https://drive.google.com/drive/u/0/my-drive">Docs</a>
+            <a class="link" href="https://www.notion.so/Master-Page-9f19eaa714694eb78ab4742a23a1438c">Notion</a>    
           </li>
           <li>
-            <a class="link" href="https://www.youtube.com/">...</a>    
+            <a class="link" href="https://my.ryerson.ca/uPortal/f/ramss/normal/render.uP">RAMS</a>    
           </li>
         </div>
       </div>
-
+      
       <div class="col">
-        <div class="icon"> <h1>Documentation</h1>      
+        <div class="icon"> <h1>Entertainment</h1>      
         </div>
         <div class="cat doc">
           <li>
-            <a class="link" href="">...</a>    
+            <a class="link" href="https://animixplay.to/">Anime</a>    
           </li>
           <li>
-            <a class="link" href="">...</a>    
+            <a class="link" href="https://www.disneyplus.com/home">Disney Plus</a>    
           </li>
           <li>
-            <a class="link" href="">...</a>    
+            <a class="link" href="https://www.netflix.com/browse">Netflix</a>    
           </li>
           <li>
-            <a class="link" href="">...</a>    
+            <a class="link" href="https://www.primevideo.com/">Prime Video</a>    
           </li>
           <li>
-            <a class="link" href="">...</a>    
+            <a class="link" href="https://www.twitch.tv/">Twitch</a>    
           </li>
         </div>
-      </div>
-    
-
+      </div>            
     </div>
   </div>
 </body>
 
+<!--Quotes-->
+<body id="quote-generator">
+  <!-- Quote Container -->
+  <div class="quote-container">
+       <!-- Quote to be Displayed Here -->
+
+      <div class ="quote-body">
+          <div class="icon-quote">
+              <span class="icon">
+
+                  <i class="fas fa-quote-left"></i>
+              </span>
+              <span class="quote" id="quote"></span>
+
+              <span class="icon2">
+
+                  <i class="fas fa-quote-right"></i>
+              </span>
+             
+              <!-- Author to be Displayed Here -->
+          </div>                
+          <p class="author" id="author"></p>      
+          <hr/>
+              <div class="quote-buttons">
+                  <div class="buttons">
+                      <button class="next" onclick="getNewQuote()">Next quote</button>
+                  </div>
+              </div>            
+      </div>            
+  </div>      
+</body>
 </html>

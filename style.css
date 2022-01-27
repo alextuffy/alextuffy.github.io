@@ -231,7 +231,8 @@ a:visited {
   height: 100%;
   padding: 50px 50px;
   border-radius: 25px;
-  background-color: #222d32;
+  background: #000000d0;
+  opacity: 90%;
 }
 
 .icon-quote {
@@ -307,8 +308,6 @@ button:active {
 .quote-container:hover {
   box-shadow: 0 10px 10px rgb(99, 47, 231);
 }
-
-
 
 /* Weather Page */
 
